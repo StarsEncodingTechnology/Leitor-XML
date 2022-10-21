@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aJeJrDSGTJQfwCRz/2iJAzCGUMUz10BPyPX4QoKzajPoLI6LJtMZGjt0r2hmzXuFfNyHK/Z8LuQP3DaSRze23g==",
+  "dgSpecHash": "Ak3yAqMyBs5CvXHCTrL41iTZ9NYaPV6bWABSVtCYvgg1GvkDllPatB5QrZXTPhvmiytQ6IarkG5PvEr5bw896A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Stars\\Documents\\UiPath\\Leitor de XML\\.local\\",
+  "projectFilePath": "C:\\Users\\Stars\\Documents\\GitHub\\Leitor-XML\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\Stars\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Stars\\.nuget\\packages\\azure.core\\1.18.0\\azure.core.1.18.0.nupkg.sha512",

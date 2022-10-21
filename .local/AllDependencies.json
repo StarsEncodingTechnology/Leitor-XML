@@ -20630,9 +20630,9 @@
     "restore": {
       "projectUniqueName": "Leitor de XML",
       "projectName": "Leitor de XML",
-      "projectPath": "C:\\Users\\Stars\\Documents\\UiPath\\Leitor de XML\\.local",
+      "projectPath": "C:\\Users\\Stars\\Documents\\GitHub\\Leitor-XML\\.local",
       "packagesPath": "C:\\Users\\Stars\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Stars\\Documents\\UiPath\\Leitor de XML\\.local"
+      "outputPath": "C:\\Users\\Stars\\Documents\\GitHub\\Leitor-XML\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
