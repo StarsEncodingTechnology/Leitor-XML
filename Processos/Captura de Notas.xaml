@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Captura_de_Notas" this:Captura_de_Notas.Dir="C:\Users\Stars\Desktop\RODOTAC" this:Captura_de_Notas.CNPJ="04400329000109" this:Captura_de_Notas.CFOPs="1206;2206" this:Captura_de_Notas.UF="SP" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Captura_de_Notas" this:Captura_de_Notas.Dir="C:\Users\Stars\Desktop\TRANSMOB" this:Captura_de_Notas.NCMs="25030010" this:Captura_de_Notas.CNPJ="50505924000118" this:Captura_de_Notas.CFOPs="1206;2206" this:Captura_de_Notas.UF="SP" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="Dir" Type="InArgument(x:String)" />
     <x:Property Name="NCMs" Type="InArgument(x:String)" />
@@ -473,7 +473,7 @@
                   </ui:IfElseIfBlock>
                   <ui:IfElseIfBlock BlockType="Else">
                     <ui:IfElseIfBlock.Then>
-                      <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="625.6,2487.2" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                      <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="625.6,2455.2" sap2010:WorkflowViewState.IdRef="Sequence_20">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:Int32" Name="index_Inicial_UF" />
                           <Variable x:TypeArguments="x:Int32" Name="index_Final_UF" />
@@ -630,7 +630,7 @@
                             </sc:BindingList>
                           </ui:IfElseIf.ConditionBlocks>
                         </ui:IfElseIf>
-                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="563.2,1215.2" sap2010:WorkflowViewState.IdRef="IfElseIf_4">
+                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="563.2,1183.2" sap2010:WorkflowViewState.IdRef="IfElseIf_4">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                               <ui:IfElseIfBlock BlockType="If" Condition="[not String.IsNullOrEmpty(UF_XML)]">
@@ -727,7 +727,7 @@
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                   <ui:IfElseIfBlock BlockType="If" Condition="[not String.IsNullOrEmpty(CFOPs)]">
                     <ui:IfElseIfBlock.Then>
-                      <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="625.6,2484.8" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                      <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="625.6,2564.8" sap2010:WorkflowViewState.IdRef="Sequence_28">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:Int32" Name="index_Inicial_CFOP" />
                           <Variable x:TypeArguments="x:Int32" Name="index_Final_CFOP" />
@@ -884,7 +884,7 @@
                             </sc:BindingList>
                           </ui:IfElseIf.ConditionBlocks>
                         </ui:IfElseIf>
-                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="563.2,1212.8" sap2010:WorkflowViewState.IdRef="IfElseIf_11">
+                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="563.2,1292.8" sap2010:WorkflowViewState.IdRef="IfElseIf_11">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                               <ui:IfElseIfBlock BlockType="If" Condition="[not String.IsNullOrEmpty(CFOP_XML)]">
@@ -1007,10 +1007,10 @@
               </sap:WorkflowViewStateService.ViewState>
             </ui:IfElseIf>
             <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentRow(0).ToString, CurrentRow(1).ToString, ValidadorNCM.ToString, ValidadorCNPJ.ToString, ValidadorCFOP.ToString, ValidadorUF.ToString}]" DataTable="[dt_Arquivos_Filtrados]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="563.2,197.6" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="563.2,3328.8" sap2010:WorkflowViewState.IdRef="IfElseIf_12">
+            <ui:IfElseIf DisplayName=" Else If" sap:VirtualizedContainerService.HintSize="563.2,3328.8" sap2010:WorkflowViewState.IdRef="IfElseIf_12">
               <ui:IfElseIf.ConditionBlocks>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                  <ui:IfElseIfBlock BlockType="If" Condition="[not (ValidadorCFOP or ValidadorCNPJ or ValidadorNCM or ValidadorUF)]">
+                  <ui:IfElseIfBlock BlockType="If" Condition="[not (ValidadorCFOP or (not ValidadorCNPJ) or ValidadorNCM or (not ValidadorUF))]">
                     <ui:IfElseIfBlock.Then>
                       <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="400,292.8" sap2010:WorkflowViewState.IdRef="Sequence_36">
                         <sap:WorkflowViewStateService.ViewState>
@@ -1070,7 +1070,7 @@
                         <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="450.4,397.6" sap2010:WorkflowViewState.IdRef="IfElseIf_14">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                              <ui:IfElseIfBlock BlockType="If" Condition="[ValidadorCNPJ]">
+                              <ui:IfElseIfBlock BlockType="If" Condition="[not ValidadorCNPJ]">
                                 <ui:IfElseIfBlock.Then>
                                   <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="400,192.8" sap2010:WorkflowViewState.IdRef="Sequence_39">
                                     <sap:WorkflowViewStateService.ViewState>
@@ -1120,7 +1120,7 @@
                         <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="450.4,397.6" sap2010:WorkflowViewState.IdRef="IfElseIf_16">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                              <ui:IfElseIfBlock BlockType="If" Condition="[ValidadorUF]">
+                              <ui:IfElseIfBlock BlockType="If" Condition="[not ValidadorUF]">
                                 <ui:IfElseIfBlock.Then>
                                   <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="400,192.8" sap2010:WorkflowViewState.IdRef="Sequence_41">
                                     <sap:WorkflowViewStateService.ViewState>
