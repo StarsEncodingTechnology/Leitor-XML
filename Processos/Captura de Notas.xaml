@@ -10,7 +10,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>967.1999999999999,11703.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>847.1999999999999,11434.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Captura_de_Notas_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="38">
@@ -114,7 +114,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Captura_de_Notas" sap:VirtualizedContainerService.HintSize="834.3999999999999,11369.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Captura_de_Notas" sap:VirtualizedContainerService.HintSize="834.4,11369.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Arquivos" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Arquivos_Filtrados" />
@@ -127,7 +127,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:BuildDataTable DataTable="[dt_Arquivos]" DisplayName="Constroi tabela de arquivos" sap:VirtualizedContainerService.HintSize="772,69.6" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Arquivo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Diretorio&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Dados_x0020_XML&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
     <ui:BuildDataTable DataTable="[dt_Arquivos_Filtrados]" DisplayName="Cosntroi tabela de resultados" sap:VirtualizedContainerService.HintSize="772,69.6" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Arquivo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Diretorio&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;NCM&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;CNPJ&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;CFOP&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;UF&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:BuildDataTable DataTable="[dt_log]" DisplayName="Cosntroi log" sap:VirtualizedContainerService.HintSize="772,69.6" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Data_x0020_CT-e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Chave_x0020_CT-e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Tipo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:BuildDataTable DataTable="[dt_log]" DisplayName="Cosntroi log" sap:VirtualizedContainerService.HintSize="772,69.6" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Data_x0020_CT-e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Chave_x0020_CT-e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Detecta todos os arquivos a serem lidos" sap:VirtualizedContainerService.HintSize="772,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Processos\Le Interno.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="Dir">[Dir]</InArgument>
@@ -142,7 +142,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="738.4,9687.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="913.6,13481.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="Diretorio_Arquivo" />
               <Variable x:TypeArguments="x:String" Name="String_XML" />
@@ -157,7 +157,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:MultipleAssign DisplayName="Obtem valores iniciais" sap:VirtualizedContainerService.HintSize="676,141.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+            <ui:MultipleAssign DisplayName="Obtem valores iniciais" sap:VirtualizedContainerService.HintSize="851.2,141.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
@@ -179,7 +179,7 @@
                 </scg:List>
               </ui:MultipleAssign.AssignOperations>
             </ui:MultipleAssign>
-            <ui:IfElseIf DisplayName="Verifica NCMs" sap:VirtualizedContainerService.HintSize="676,62.4" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+            <ui:IfElseIf DisplayName="Verifica NCMs" sap:VirtualizedContainerService.HintSize="851.2,62.4" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
               <ui:IfElseIf.ConditionBlocks>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                   <ui:IfElseIfBlock BlockType="If" Condition="[not String.IsNullOrEmpty(NCMs)]">
@@ -322,7 +322,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:IfElseIf>
-            <ui:IfElseIf DisplayName="Verifica CNPJ" sap:VirtualizedContainerService.HintSize="676,62.4" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
+            <ui:IfElseIf DisplayName="Verifica CNPJ" sap:VirtualizedContainerService.HintSize="851.2,62.4" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
               <ui:IfElseIf.ConditionBlocks>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                   <ui:IfElseIfBlock BlockType="If" Condition="[not String.IsNullOrEmpty(CNPJ)]">
@@ -454,7 +454,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:IfElseIf>
-            <ui:IfElseIf DisplayName="Verifica UF" sap:VirtualizedContainerService.HintSize="676,2888.8" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
+            <ui:IfElseIf DisplayName="Verifica UF" sap:VirtualizedContainerService.HintSize="851.2,2888.8" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
               <ui:IfElseIf.ConditionBlocks>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                   <ui:IfElseIfBlock BlockType="If" Condition="[String.IsNullOrEmpty(UF) or  UF = &quot;Nenhum&quot;]">
@@ -727,7 +727,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:IfElseIf>
-            <ui:IfElseIf DisplayName="Verifica CFOP" sap:VirtualizedContainerService.HintSize="676,62.4" sap2010:WorkflowViewState.IdRef="IfElseIf_8">
+            <ui:IfElseIf DisplayName="Verifica CFOP" sap:VirtualizedContainerService.HintSize="851.2,62.4" sap2010:WorkflowViewState.IdRef="IfElseIf_8">
               <ui:IfElseIf.ConditionBlocks>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                   <ui:IfElseIfBlock BlockType="If" Condition="[not String.IsNullOrEmpty(CFOPs)]">
@@ -1011,12 +1011,12 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:IfElseIf>
-            <ui:IfElseIf DisplayName="Verifica Produto" sap:VirtualizedContainerService.HintSize="676,62.4" sap2010:WorkflowViewState.IdRef="IfElseIf_19">
+            <ui:IfElseIf DisplayName="Verifica Produto" sap:VirtualizedContainerService.HintSize="851.2,3533.6" sap2010:WorkflowViewState.IdRef="IfElseIf_19">
               <ui:IfElseIf.ConditionBlocks>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                   <ui:IfElseIfBlock BlockType="If" Condition="[not String.IsNullOrEmpty(Produto)]">
                     <ui:IfElseIfBlock.Then>
-                      <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="605.6,1898.4" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                      <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="749.6,3100" sap2010:WorkflowViewState.IdRef="Sequence_44">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:Int32" Name="Index_Inicial_Carga" />
                           <Variable x:TypeArguments="x:Int32" Name="Index_Final_Carga" />
@@ -1028,12 +1028,12 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="543.2,1108.8" sap2010:WorkflowViewState.IdRef="IfElseIf_18">
+                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="687.2,2310.4" sap2010:WorkflowViewState.IdRef="IfElseIf_18">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                               <ui:IfElseIfBlock BlockType="If" Condition="[String_XML.Contains(&quot;nfeProc&quot;)]">
                                 <ui:IfElseIfBlock.Then>
-                                  <Sequence sap:VirtualizedContainerService.HintSize="492.8,389.6" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                                  <Sequence sap:VirtualizedContainerService.HintSize="636.8,990.4" sap2010:WorkflowViewState.IdRef="Sequence_46">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="x:Int32" Name="Index_Inicial_Prod" />
                                       <Variable x:TypeArguments="x:Int32" Name="Index_Final_Prod" />
@@ -1043,7 +1043,7 @@
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="430.4,266.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_10">
+                                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="574.4,141.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_10">
                                       <ui:MultipleAssign.AssignOperations>
                                         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_42">
@@ -1062,47 +1062,83 @@
                                               <InArgument x:TypeArguments="x:Int32">[String_XML.IndexOf("&lt;/prod&gt;")]</InArgument>
                                             </ui:AssignOperation.Value>
                                           </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_44">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:String">[prod]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[String_XML.Substring(Index_Inicial_Prod, Index_Final_Prod - Index_Inicial_Prod)]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_45">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:Int32">[Index_Inicial_Carga]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:Int32">[prod.IndexOf("&lt;xProd&gt;") +7]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_47">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:Int32">[Index_Final_Carga]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:Int32">[prod.IndexOf("&lt;/xProd&gt;")]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_46">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:String">[carga]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[prod.Substring(Index_Inicial_Carga, Index_Final_Carga - Index_Inicial_Carga)]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
                                         </scg:List>
                                       </ui:MultipleAssign.AssignOperations>
                                     </ui:MultipleAssign>
+                                    <If Condition="[Index_Final_Prod &lt;&gt; -1]" sap:VirtualizedContainerService.HintSize="574.4,685.6" sap2010:WorkflowViewState.IdRef="If_8">
+                                      <If.Then>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="492.8,327.2" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="430.4,204" sap2010:WorkflowViewState.IdRef="MultipleAssign_16">
+                                            <ui:MultipleAssign.AssignOperations>
+                                              <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_66">
+                                                  <ui:AssignOperation.To>
+                                                    <OutArgument x:TypeArguments="x:String">[prod]</OutArgument>
+                                                  </ui:AssignOperation.To>
+                                                  <ui:AssignOperation.Value>
+                                                    <InArgument x:TypeArguments="x:String">[String_XML.Substring(Index_Inicial_Prod, Index_Final_Prod - Index_Inicial_Prod)]</InArgument>
+                                                  </ui:AssignOperation.Value>
+                                                </ui:AssignOperation>
+                                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_67">
+                                                  <ui:AssignOperation.To>
+                                                    <OutArgument x:TypeArguments="x:Int32">[Index_Inicial_Carga]</OutArgument>
+                                                  </ui:AssignOperation.To>
+                                                  <ui:AssignOperation.Value>
+                                                    <InArgument x:TypeArguments="x:Int32">[prod.IndexOf("&lt;xProd&gt;") +7]</InArgument>
+                                                  </ui:AssignOperation.Value>
+                                                </ui:AssignOperation>
+                                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_68">
+                                                  <ui:AssignOperation.To>
+                                                    <OutArgument x:TypeArguments="x:Int32">[Index_Final_Carga]</OutArgument>
+                                                  </ui:AssignOperation.To>
+                                                  <ui:AssignOperation.Value>
+                                                    <InArgument x:TypeArguments="x:Int32">[prod.IndexOf("&lt;/xProd&gt;")]</InArgument>
+                                                  </ui:AssignOperation.Value>
+                                                </ui:AssignOperation>
+                                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_69">
+                                                  <ui:AssignOperation.To>
+                                                    <OutArgument x:TypeArguments="x:String">[carga]</OutArgument>
+                                                  </ui:AssignOperation.To>
+                                                  <ui:AssignOperation.Value>
+                                                    <InArgument x:TypeArguments="x:String">[prod.Substring(Index_Inicial_Carga, Index_Final_Carga - Index_Inicial_Carga)]</InArgument>
+                                                  </ui:AssignOperation.Value>
+                                                </ui:AssignOperation>
+                                              </scg:List>
+                                            </ui:MultipleAssign.AssignOperations>
+                                          </ui:MultipleAssign>
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="400,192.8" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <Assign sap:VirtualizedContainerService.HintSize="337.6,69.6" sap2010:WorkflowViewState.IdRef="Assign_34">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:String">[carga]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:String">
+                                                <Literal x:TypeArguments="x:String" Value="" />
+                                              </InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
                                   </Sequence>
                                 </ui:IfElseIfBlock.Then>
                               </ui:IfElseIfBlock>
                               <ui:IfElseIfBlock BlockType="ElseIf" Condition="[String_XML.Contains(&quot;cteProc&quot;)]">
                                 <ui:IfElseIfBlock.Then>
-                                  <Sequence sap:VirtualizedContainerService.HintSize="492.8,389.6" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                                  <Sequence sap:VirtualizedContainerService.HintSize="636.8,990.4" sap2010:WorkflowViewState.IdRef="Sequence_47">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="x:Int32" Name="Index_Inicial_proPred" />
                                       <Variable x:TypeArguments="x:Int32" Name="Index_Final_proPred" />
@@ -1112,7 +1148,7 @@
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="430.4,266.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_11">
+                                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="574.4,141.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_11">
                                       <ui:MultipleAssign.AssignOperations>
                                         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_48">
@@ -1131,48 +1167,84 @@
                                               <InArgument x:TypeArguments="x:Int32">[String_XML.IndexOf("&lt;/infCarga&gt;")]</InArgument>
                                             </ui:AssignOperation.Value>
                                           </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_50">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:String">[prod]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[String_XML.Substring(Index_Inicial_proPred, Index_Final_proPred - Index_Inicial_proPred)]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_51">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:Int32">[Index_Inicial_Carga]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:Int32">[prod.IndexOf("&lt;proPred&gt;") +9]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_52">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:Int32">[Index_Final_Carga]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:Int32">[prod.IndexOf("&lt;/proPred&gt;")]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_53">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:String">[carga]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[prod.Substring(Index_Inicial_Carga, Index_Final_Carga - Index_Inicial_Carga)]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
                                         </scg:List>
                                       </ui:MultipleAssign.AssignOperations>
                                     </ui:MultipleAssign>
+                                    <If Condition="[Index_Final_proPred &lt;&gt; -1]" sap:VirtualizedContainerService.HintSize="574.4,685.6" sap2010:WorkflowViewState.IdRef="If_9">
+                                      <If.Then>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="492.8,327.2" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="430.4,204" sap2010:WorkflowViewState.IdRef="MultipleAssign_17">
+                                            <ui:MultipleAssign.AssignOperations>
+                                              <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_70">
+                                                  <ui:AssignOperation.To>
+                                                    <OutArgument x:TypeArguments="x:String">[prod]</OutArgument>
+                                                  </ui:AssignOperation.To>
+                                                  <ui:AssignOperation.Value>
+                                                    <InArgument x:TypeArguments="x:String">[String_XML.Substring(Index_Inicial_proPred, Index_Final_proPred - Index_Inicial_proPred)]</InArgument>
+                                                  </ui:AssignOperation.Value>
+                                                </ui:AssignOperation>
+                                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_71">
+                                                  <ui:AssignOperation.To>
+                                                    <OutArgument x:TypeArguments="x:Int32">[Index_Inicial_Carga]</OutArgument>
+                                                  </ui:AssignOperation.To>
+                                                  <ui:AssignOperation.Value>
+                                                    <InArgument x:TypeArguments="x:Int32">[prod.IndexOf("&lt;proPred&gt;") +9]</InArgument>
+                                                  </ui:AssignOperation.Value>
+                                                </ui:AssignOperation>
+                                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_72">
+                                                  <ui:AssignOperation.To>
+                                                    <OutArgument x:TypeArguments="x:Int32">[Index_Final_Carga]</OutArgument>
+                                                  </ui:AssignOperation.To>
+                                                  <ui:AssignOperation.Value>
+                                                    <InArgument x:TypeArguments="x:Int32">[prod.IndexOf("&lt;/proPred&gt;")]</InArgument>
+                                                  </ui:AssignOperation.Value>
+                                                </ui:AssignOperation>
+                                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_73">
+                                                  <ui:AssignOperation.To>
+                                                    <OutArgument x:TypeArguments="x:String">[carga]</OutArgument>
+                                                  </ui:AssignOperation.To>
+                                                  <ui:AssignOperation.Value>
+                                                    <InArgument x:TypeArguments="x:String">[prod.Substring(Index_Inicial_Carga, Index_Final_Carga - Index_Inicial_Carga)]</InArgument>
+                                                  </ui:AssignOperation.Value>
+                                                </ui:AssignOperation>
+                                              </scg:List>
+                                            </ui:MultipleAssign.AssignOperations>
+                                          </ui:MultipleAssign>
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="400,192.8" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <Assign sap:VirtualizedContainerService.HintSize="337.6,69.6" sap2010:WorkflowViewState.IdRef="Assign_35">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:String">[carga]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:String">
+                                                <Literal x:TypeArguments="x:String" Value="" />
+                                              </InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
                                   </Sequence>
                                 </ui:IfElseIfBlock.Then>
                               </ui:IfElseIfBlock>
                             </sc:BindingList>
                           </ui:IfElseIf.ConditionBlocks>
                         </ui:IfElseIf>
-                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="543.2,626.4" sap2010:WorkflowViewState.IdRef="IfElseIf_20">
+                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="687.2,626.4" sap2010:WorkflowViewState.IdRef="IfElseIf_20">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                               <ui:IfElseIfBlock BlockType="If" Condition="[carga.Contains(&quot;Produto&quot;)]">
@@ -1242,13 +1314,13 @@
               </ui:IfElseIf.ConditionBlocks>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:IfElseIf>
-            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentRow(0).ToString, CurrentRow(1).ToString, ValidadorNCM.ToString, ValidadorCNPJ.ToString, ValidadorCFOP.ToString, ValidadorUF.ToString}]" DataTable="[dt_Arquivos_Filtrados]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="676,197.6" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-            <ui:IfElseIf DisplayName=" Else If" sap:VirtualizedContainerService.HintSize="676,5806.4" sap2010:WorkflowViewState.IdRef="IfElseIf_12">
+            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentRow(0).ToString, CurrentRow(1).ToString, ValidadorNCM.ToString, ValidadorCNPJ.ToString, ValidadorCFOP.ToString, ValidadorUF.ToString}]" DataTable="[dt_Arquivos_Filtrados]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="851.2,197.6" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+            <ui:IfElseIf DisplayName=" Else If" sap:VirtualizedContainerService.HintSize="851.2,6129.6" sap2010:WorkflowViewState.IdRef="IfElseIf_12">
               <ui:IfElseIf.ConditionBlocks>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                   <ui:IfElseIfBlock BlockType="If" Condition="[not (ValidadorCFOP or (not ValidadorCNPJ) or ValidadorNCM or (not ValidadorUF) or ValidadorProduto)]">
@@ -1265,7 +1337,7 @@
                   </ui:IfElseIfBlock>
                   <ui:IfElseIfBlock BlockType="Else">
                     <ui:IfElseIfBlock.Then>
-                      <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="605.6,5272.8" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                      <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="605.6,5596" sap2010:WorkflowViewState.IdRef="Sequence_42">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:String" Name="MoveDir" />
                           <Variable x:TypeArguments="x:Boolean" Name="existe" />
@@ -1277,6 +1349,7 @@
                           <Variable x:TypeArguments="x:String" Name="DataEmi" />
                           <Variable x:TypeArguments="x:String" Name="idNota" />
                           <Variable x:TypeArguments="x:String" Name="TipoNota" />
+                          <Variable x:TypeArguments="s:String[]" Name="vetDataEmi" />
                         </Sequence.Variables>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1346,7 +1419,7 @@
                                   <OutArgument x:TypeArguments="x:String">[idNota]</OutArgument>
                                 </ui:AssignOperation.To>
                                 <ui:AssignOperation.Value>
-                                  <InArgument x:TypeArguments="x:String">[Split(String_XML, "Id=""")(0)]</InArgument>
+                                  <InArgument x:TypeArguments="x:String">[Split(String_XML, "Id=""")(1)]</InArgument>
                                 </ui:AssignOperation.Value>
                               </ui:AssignOperation>
                               <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_62">
@@ -1433,7 +1506,45 @@
                             </sc:BindingList>
                           </ui:IfElseIf.ConditionBlocks>
                         </ui:IfElseIf>
-                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{DataEmi, idNota, TipoNota}]" DataTable="[dt_log]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="543.2,197.6" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                        <Assign sap:VirtualizedContainerService.HintSize="543.2,69.6" sap2010:WorkflowViewState.IdRef="Assign_36">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[idNota]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[idNota.Replace(TipoNota, "")]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="543.2,173.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_18">
+                          <ui:MultipleAssign.AssignOperations>
+                            <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_74">
+                                <ui:AssignOperation.To>
+                                  <OutArgument x:TypeArguments="x:String">[DataEmi]</OutArgument>
+                                </ui:AssignOperation.To>
+                                <ui:AssignOperation.Value>
+                                  <InArgument x:TypeArguments="x:String">[Split(DataEmi, "T")(0)]</InArgument>
+                                </ui:AssignOperation.Value>
+                              </ui:AssignOperation>
+                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_75">
+                                <ui:AssignOperation.To>
+                                  <OutArgument x:TypeArguments="s:String[]">[vetDataEmi]</OutArgument>
+                                </ui:AssignOperation.To>
+                                <ui:AssignOperation.Value>
+                                  <InArgument x:TypeArguments="s:String[]">[Split(DataEmi, "-")]</InArgument>
+                                </ui:AssignOperation.Value>
+                              </ui:AssignOperation>
+                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_76">
+                                <ui:AssignOperation.To>
+                                  <OutArgument x:TypeArguments="x:String">[DataEmi]</OutArgument>
+                                </ui:AssignOperation.To>
+                                <ui:AssignOperation.Value>
+                                  <InArgument x:TypeArguments="x:String">[vetDataEmi(2)+"/"+vetDataEmi(1)+"/"+vetDataEmi(0)]</InArgument>
+                                </ui:AssignOperation.Value>
+                              </ui:AssignOperation>
+                            </scg:List>
+                          </ui:MultipleAssign.AssignOperations>
+                        </ui:MultipleAssign>
+                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{DataEmi, idNota}]" DataTable="[dt_log]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="543.2,197.6" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
                         <ui:CopyFile ContinueOnError="{x:Null}" Destination="[Dir+&quot;\GeralExcluidos\&quot;]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="543.2,164.8" sap2010:WorkflowViewState.IdRef="CopyFile_1" Path="[CurrentRow(1).ToString]" />
                         <Assign sap:VirtualizedContainerService.HintSize="543.2,69.6" sap2010:WorkflowViewState.IdRef="Assign_22">
                           <Assign.To>
