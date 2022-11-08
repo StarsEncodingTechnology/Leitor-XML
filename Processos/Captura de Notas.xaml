@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Captura_de_Notas" this:Captura_de_Notas.Dir="C:\Users\Stars\Desktop\Transmob" this:Captura_de_Notas.NCMs="25030010" this:Captura_de_Notas.CNPJ="50505924000118" this:Captura_de_Notas.CFOPs="1206;2206" this:Captura_de_Notas.UF="SP" this:Captura_de_Notas.Produto="ENXOFRE" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Captura_de_Notas" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="Dir" Type="InArgument(x:String)" />
     <x:Property Name="NCMs" Type="InArgument(x:String)" />
@@ -10,7 +10,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>999.2,15103.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>999.2,14906.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Captura_de_Notas_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="38">
@@ -114,7 +114,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Captura_de_Notas" sap:VirtualizedContainerService.HintSize="1009.6,15038.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Captura_de_Notas" sap:VirtualizedContainerService.HintSize="1009.6,14841.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Arquivos" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Arquivos_Filtrados" />
@@ -127,7 +127,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:BuildDataTable DataTable="[dt_Arquivos]" DisplayName="Constroi tabela de arquivos" sap:VirtualizedContainerService.HintSize="947.2,69.6" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Arquivo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Diretorio&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Dados_x0020_XML&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
     <ui:BuildDataTable DataTable="[dt_Arquivos_Filtrados]" DisplayName="Cosntroi tabela de resultados" sap:VirtualizedContainerService.HintSize="947.2,69.6" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Arquivo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Diretorio&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;NCM&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;CNPJ&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;CFOP&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;UF&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:BuildDataTable DataTable="[dt_log]" DisplayName="Cosntroi log" sap:VirtualizedContainerService.HintSize="947.2,69.6" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Data_x0020_CT-e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Chave_x0020_CT-e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:BuildDataTable DataTable="[dt_log]" DisplayName="Cosntroi log" sap:VirtualizedContainerService.HintSize="947.2,69.6" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Data_x0020_CT-e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Chave_x0020_CT-e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Detecta todos os arquivos a serem lidos" sap:VirtualizedContainerService.HintSize="947.2,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Processos\Le Interno.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="Dir">[Dir]</InArgument>
@@ -136,13 +136,13 @@
     </ui:InvokeWorkflowFile>
     <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Padrão" sap:VirtualizedContainerService.HintSize="947.2,90.4" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[Dir+&quot;\Padrão\&quot;]" />
     <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Padrão" sap:VirtualizedContainerService.HintSize="947.2,90.4" sap2010:WorkflowViewState.IdRef="CreateDirectory_4" Path="[Dir+&quot;\GeralExcluidos\&quot;]" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Arquivos]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="947.2,13481.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Arquivos]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="947.2,13284.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="913.6,13356" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="913.6,13159.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="Diretorio_Arquivo" />
               <Variable x:TypeArguments="x:String" Name="String_XML" />
@@ -454,7 +454,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:IfElseIf>
-            <ui:IfElseIf DisplayName="Verifica UF" sap:VirtualizedContainerService.HintSize="851.2,2888.8" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
+            <ui:IfElseIf DisplayName="Verifica UF" sap:VirtualizedContainerService.HintSize="851.2,2692" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
               <ui:IfElseIf.ConditionBlocks>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                   <ui:IfElseIfBlock BlockType="If" Condition="[String.IsNullOrEmpty(UF) or  UF = &quot;Nenhum&quot;]">
@@ -478,7 +478,7 @@
                   </ui:IfElseIfBlock>
                   <ui:IfElseIfBlock BlockType="Else">
                     <ui:IfElseIfBlock.Then>
-                      <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="625.6,2455.2" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                      <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="738.4,2258.4" sap2010:WorkflowViewState.IdRef="Sequence_20">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:Int32" Name="index_Inicial_UF" />
                           <Variable x:TypeArguments="x:Int32" Name="index_Final_UF" />
@@ -489,12 +489,12 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="563.2,1108.8" sap2010:WorkflowViewState.IdRef="IfElseIf_5">
+                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="676,2135.2" sap2010:WorkflowViewState.IdRef="IfElseIf_5">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                               <ui:IfElseIfBlock BlockType="If" Condition="[String_XML.Contains(&quot;nfeProc&quot;)]">
                                 <ui:IfElseIfBlock.Then>
-                                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="492.8,389.6" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="400,192.8" sap2010:WorkflowViewState.IdRef="Sequence_21">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="x:Int32" Name="index_Inicial_endEmit" />
                                       <Variable x:TypeArguments="x:Int32" Name="index_Final_endemit" />
@@ -505,101 +505,55 @@
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="430.4,266.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
-                                      <ui:MultipleAssign.AssignOperations>
-                                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_21">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:Int32">[index_Inicial_endEmit]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:Int32">[String_XML.IndexOf("&lt;enderEmit&gt;") + 11]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_22">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:Int32">[index_Final_endemit]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:Int32">[String_XML.IndexOf("&lt;/enderEmit&gt;")]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_23">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:String">[endEmit]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[String_XML.Substring(index_Inicial_endEmit, Index_Final_endEmit - index_Inicial_endemit)]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_24">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:Int32">[index_Inicial_UF]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:Int32">[endEmit.IndexOf("&lt;UF&gt;") +4]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_25">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:Int32">[index_Final_UF]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:Int32">[endEmit.IndexOf("&lt;/UF&gt;")]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_28">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:String">[UF_XML]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[endEmit.Substring(index_Inicial_UF, index_Final_UF - index_Inicial_UF)]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                        </scg:List>
-                                      </ui:MultipleAssign.AssignOperations>
-                                    </ui:MultipleAssign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="337.6,69.6" sap2010:WorkflowViewState.IdRef="Assign_37">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:Boolean">[ValidadorUF]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
                                   </Sequence>
                                 </ui:IfElseIfBlock.Then>
                               </ui:IfElseIfBlock>
                               <ui:IfElseIfBlock BlockType="ElseIf" Condition="[String_XML.Contains(&quot;cteProc&quot;)]">
                                 <ui:IfElseIfBlock.Then>
-                                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="492.8,389.6" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="625.6,1612.8" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                     <Sequence.Variables>
-                                      <Variable x:TypeArguments="x:Int32" Name="index_Inicial_ide" />
-                                      <Variable x:TypeArguments="x:Int32" Name="index_Final_ide" />
-                                      <Variable x:TypeArguments="x:String" Name="ide" />
+                                      <Variable x:TypeArguments="x:Int32" Name="index_Inicial_enderReme" />
+                                      <Variable x:TypeArguments="x:Int32" Name="index_Final_enderReme" />
+                                      <Variable x:TypeArguments="x:String" Name="enderReme" />
                                     </Sequence.Variables>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="430.4,266.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
+                                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="563.2,266.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
                                       <ui:MultipleAssign.AssignOperations>
                                         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_16">
                                             <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:Int32">[index_Inicial_ide]</OutArgument>
+                                              <OutArgument x:TypeArguments="x:Int32">[index_Inicial_enderReme]</OutArgument>
                                             </ui:AssignOperation.To>
                                             <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:Int32">[String_XML.IndexOf("&lt;ide&gt;") + 4]</InArgument>
+                                              <InArgument x:TypeArguments="x:Int32">[String_XML.IndexOf("&lt;enderReme&gt;") + 11]</InArgument>
                                             </ui:AssignOperation.Value>
                                           </ui:AssignOperation>
                                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_17">
                                             <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:Int32">[index_Final_ide]</OutArgument>
+                                              <OutArgument x:TypeArguments="x:Int32">[index_Final_enderReme]</OutArgument>
                                             </ui:AssignOperation.To>
                                             <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:Int32">[String_XML.IndexOf("&lt;/ide&gt;")]</InArgument>
+                                              <InArgument x:TypeArguments="x:Int32">[String_XML.IndexOf("&lt;/enderReme&gt;")]</InArgument>
                                             </ui:AssignOperation.Value>
                                           </ui:AssignOperation>
                                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_18">
                                             <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:String">[ide]</OutArgument>
+                                              <OutArgument x:TypeArguments="x:String">[enderReme]</OutArgument>
                                             </ui:AssignOperation.To>
                                             <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[String_XML.Substring(index_Inicial_ide, index_Final_ide - index_Inicial_ide)]</InArgument>
+                                              <InArgument x:TypeArguments="x:String">[String_XML.Substring(index_Inicial_enderReme, index_Final_enderReme - index_Inicial_enderReme)]</InArgument>
                                             </ui:AssignOperation.Value>
                                           </ui:AssignOperation>
                                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_19">
@@ -607,7 +561,7 @@
                                               <OutArgument x:TypeArguments="x:Int32">[index_Inicial_UF]</OutArgument>
                                             </ui:AssignOperation.To>
                                             <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:Int32">[ide.IndexOf("&lt;UFIni&gt;") +7]</InArgument>
+                                              <InArgument x:TypeArguments="x:Int32">[enderReme.IndexOf("&lt;UF&gt;") +4]</InArgument>
                                             </ui:AssignOperation.Value>
                                           </ui:AssignOperation>
                                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_20">
@@ -615,7 +569,7 @@
                                               <OutArgument x:TypeArguments="x:Int32">[index_Final_UF]</OutArgument>
                                             </ui:AssignOperation.To>
                                             <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:Int32">[ide.IndexOf("&lt;/UFIni&gt;")]</InArgument>
+                                              <InArgument x:TypeArguments="x:Int32">[enderReme.IndexOf("&lt;/UF&gt;")]</InArgument>
                                             </ui:AssignOperation.Value>
                                           </ui:AssignOperation>
                                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_29">
@@ -623,60 +577,79 @@
                                               <OutArgument x:TypeArguments="x:String">[UF_XML]</OutArgument>
                                             </ui:AssignOperation.To>
                                             <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[ide.Substring(index_Inicial_UF, index_Final_UF - index_Inicial_UF)]</InArgument>
+                                              <InArgument x:TypeArguments="x:String">[enderReme.Substring(index_Inicial_UF, index_Final_UF - index_Inicial_UF)]</InArgument>
                                             </ui:AssignOperation.Value>
                                           </ui:AssignOperation>
                                         </scg:List>
                                       </ui:MultipleAssign.AssignOperations>
                                     </ui:MultipleAssign>
-                                  </Sequence>
-                                </ui:IfElseIfBlock.Then>
-                              </ui:IfElseIfBlock>
-                            </sc:BindingList>
-                          </ui:IfElseIf.ConditionBlocks>
-                        </ui:IfElseIf>
-                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="563.2,1183.2" sap2010:WorkflowViewState.IdRef="IfElseIf_4">
-                          <ui:IfElseIf.ConditionBlocks>
-                            <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                              <ui:IfElseIfBlock BlockType="If" Condition="[not String.IsNullOrEmpty(UF_XML)]">
-                                <ui:IfElseIfBlock.Then>
-                                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="512.8,749.6" sap2010:WorkflowViewState.IdRef="Sequence_19">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="450.4,626.4" sap2010:WorkflowViewState.IdRef="IfElseIf_7">
+                                    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="563.2,1183.2" sap2010:WorkflowViewState.IdRef="IfElseIf_4">
                                       <ui:IfElseIf.ConditionBlocks>
                                         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                                          <ui:IfElseIfBlock BlockType="If" Condition="[UF_XML.Contains(UF)]">
+                                          <ui:IfElseIfBlock BlockType="If" Condition="[not String.IsNullOrEmpty(UF_XML)]">
                                             <ui:IfElseIfBlock.Then>
-                                              <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="400,192.8" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                              <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="512.8,749.6" sap2010:WorkflowViewState.IdRef="Sequence_19">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <Assign sap:VirtualizedContainerService.HintSize="337.6,69.6" sap2010:WorkflowViewState.IdRef="Assign_15">
-                                                  <Assign.To>
-                                                    <OutArgument x:TypeArguments="x:Boolean">[ValidadorUF]</OutArgument>
-                                                  </Assign.To>
-                                                  <Assign.Value>
-                                                    <InArgument x:TypeArguments="x:Boolean">True</InArgument>
-                                                  </Assign.Value>
-                                                </Assign>
+                                                <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="450.4,626.4" sap2010:WorkflowViewState.IdRef="IfElseIf_7">
+                                                  <ui:IfElseIf.ConditionBlocks>
+                                                    <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                                                      <ui:IfElseIfBlock BlockType="If" Condition="[UF_XML.Contains(UF)]">
+                                                        <ui:IfElseIfBlock.Then>
+                                                          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="400,192.8" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <Assign sap:VirtualizedContainerService.HintSize="337.6,69.6" sap2010:WorkflowViewState.IdRef="Assign_15">
+                                                              <Assign.To>
+                                                                <OutArgument x:TypeArguments="x:Boolean">[ValidadorUF]</OutArgument>
+                                                              </Assign.To>
+                                                              <Assign.Value>
+                                                                <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                                              </Assign.Value>
+                                                            </Assign>
+                                                          </Sequence>
+                                                        </ui:IfElseIfBlock.Then>
+                                                      </ui:IfElseIfBlock>
+                                                      <ui:IfElseIfBlock BlockType="Else">
+                                                        <ui:IfElseIfBlock.Then>
+                                                          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="400,192.8" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <Assign sap:VirtualizedContainerService.HintSize="337.6,69.6" sap2010:WorkflowViewState.IdRef="Assign_16">
+                                                              <Assign.To>
+                                                                <OutArgument x:TypeArguments="x:Boolean">[ValidadorUF]</OutArgument>
+                                                              </Assign.To>
+                                                              <Assign.Value>
+                                                                <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                                              </Assign.Value>
+                                                            </Assign>
+                                                          </Sequence>
+                                                        </ui:IfElseIfBlock.Then>
+                                                      </ui:IfElseIfBlock>
+                                                    </sc:BindingList>
+                                                  </ui:IfElseIf.ConditionBlocks>
+                                                </ui:IfElseIf>
                                               </Sequence>
                                             </ui:IfElseIfBlock.Then>
                                           </ui:IfElseIfBlock>
                                           <ui:IfElseIfBlock BlockType="Else">
                                             <ui:IfElseIfBlock.Then>
-                                              <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="400,192.8" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                              <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="400,192.8" sap2010:WorkflowViewState.IdRef="Sequence_25">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <Assign sap:VirtualizedContainerService.HintSize="337.6,69.6" sap2010:WorkflowViewState.IdRef="Assign_16">
+                                                <Assign sap:VirtualizedContainerService.HintSize="337.6,69.6" sap2010:WorkflowViewState.IdRef="Assign_14">
                                                   <Assign.To>
                                                     <OutArgument x:TypeArguments="x:Boolean">[ValidadorUF]</OutArgument>
                                                   </Assign.To>
@@ -690,25 +663,6 @@
                                         </sc:BindingList>
                                       </ui:IfElseIf.ConditionBlocks>
                                     </ui:IfElseIf>
-                                  </Sequence>
-                                </ui:IfElseIfBlock.Then>
-                              </ui:IfElseIfBlock>
-                              <ui:IfElseIfBlock BlockType="Else">
-                                <ui:IfElseIfBlock.Then>
-                                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="400,192.8" sap2010:WorkflowViewState.IdRef="Sequence_25">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                    <Assign sap:VirtualizedContainerService.HintSize="337.6,69.6" sap2010:WorkflowViewState.IdRef="Assign_14">
-                                      <Assign.To>
-                                        <OutArgument x:TypeArguments="x:Boolean">[ValidadorUF]</OutArgument>
-                                      </Assign.To>
-                                      <Assign.Value>
-                                        <InArgument x:TypeArguments="x:Boolean">False</InArgument>
-                                      </Assign.Value>
-                                    </Assign>
                                   </Sequence>
                                 </ui:IfElseIfBlock.Then>
                               </ui:IfElseIfBlock>
