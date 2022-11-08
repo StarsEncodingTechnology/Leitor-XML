@@ -5,11 +5,12 @@
     <x:Property Name="CFOPs" Type="OutArgument(x:String)" />
     <x:Property Name="UF" Type="OutArgument(x:String)" />
     <x:Property Name="Dir" Type="OutArgument(x:String)" />
+    <x:Property Name="Produto" Type="OutArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1115.2,6284</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>889.6,4271.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Requerimento_de_parametros_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="28">
@@ -85,15 +86,15 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Requerimento_de_parametros" sap:VirtualizedContainerService.HintSize="1125.6,6219.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Requerimento_de_parametros" sap:VirtualizedContainerService.HintSize="900,4206.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Erro Processo Parametros" sap:VirtualizedContainerService.HintSize="1063.2,6096" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Erro Processo Parametros" sap:VirtualizedContainerService.HintSize="837.6,4083.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Sequencia Requerimento de paramtros" sap:VirtualizedContainerService.HintSize="1026.4,5855.2" sap2010:WorkflowViewState.IdRef="Sequence_42">
+        <Sequence DisplayName="Sequencia Requerimento de paramtros" sap:VirtualizedContainerService.HintSize="800.8,3842.4" sap2010:WorkflowViewState.IdRef="Sequence_42">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="ConfirmaRequerimentoLabel" />
           </Sequence.Variables>
@@ -102,9 +103,9 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[String.IsNullOrEmpty(ConfirmaRequerimentoLabel) or ConfirmaRequerimentoLabel = &quot;Não&quot;]" DisplayName="Confirmar Requerimentos" sap:VirtualizedContainerService.HintSize="964,5732" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_7">
+          <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[String.IsNullOrEmpty(ConfirmaRequerimentoLabel) or ConfirmaRequerimentoLabel = &quot;Não&quot;]" DisplayName="Confirmar Requerimentos" sap:VirtualizedContainerService.HintSize="738.4,3719.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_7">
             <ui:InterruptibleDoWhile.Body>
-              <Sequence DisplayName="Corpo Requerimento de paramtros" sap:VirtualizedContainerService.HintSize="928.8,5555.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence DisplayName="Corpo Requerimento de paramtros" sap:VirtualizedContainerService.HintSize="703.2,3542.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:Boolean" Name="CFOPError" />
                   <Variable x:TypeArguments="x:String" Name="ErroLabel" />
@@ -117,7 +118,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[CFOPError]" DisplayName="Verifica Solicaitação CFOP" sap:VirtualizedContainerService.HintSize="866.4,62.4" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[CFOPError]" DisplayName="Verifica Solicaitação CFOP" sap:VirtualizedContainerService.HintSize="640.8,62.4" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
                   <ui:InterruptibleDoWhile.Body>
                     <Sequence DisplayName="Sequencia CFOP" sap:VirtualizedContainerService.HintSize="605.6,1876.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
                       <sap:WorkflowViewStateService.ViewState>
@@ -270,7 +271,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:InterruptibleDoWhile>
-                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[NCMError]" DisplayName="Verifica Solicaitação NCM" sap:VirtualizedContainerService.HintSize="866.4,62.4" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[NCMError]" DisplayName="Verifica Solicaitação NCM" sap:VirtualizedContainerService.HintSize="640.8,62.4" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
                   <ui:InterruptibleDoWhile.Body>
                     <Sequence DisplayName="Sequencia NCM" sap:VirtualizedContainerService.HintSize="605.6,1844.8" sap2010:WorkflowViewState.IdRef="Sequence_27">
                       <sap:WorkflowViewStateService.ViewState>
@@ -423,12 +424,12 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:InterruptibleDoWhile>
-                <ui:InputDialog Options="{x:Null}" DisplayName="Solicita UF inicial" sap:VirtualizedContainerService.HintSize="866.4,304.8" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="[&quot;Escolha o UF para comparar da onde iniciou a remessa&quot;+vbCrLf + &quot;Deixe vazio ou selecione a opção nenhum caso não queira comparar os UF iniciais&quot;]" OptionsString="Nenhum;RO;AC;AM;RR;PA;AP;TO;MA;PI;CE;RN;PB;PE;AL;SE;BA;MG;ES;RJ;SP;PR;SC;RS;MS;MT;GO;DF" Title="UF">
+                <ui:InputDialog Options="{x:Null}" DisplayName="Solicita UF inicial" sap:VirtualizedContainerService.HintSize="640.8,304.8" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="[&quot;Escolha o UF para comparar da onde iniciou a remessa&quot;+vbCrLf + &quot;Deixe vazio ou selecione a opção nenhum caso não queira comparar os UF iniciais&quot;]" OptionsString="Nenhum;RO;AC;AM;RR;PA;AP;TO;MA;PI;CE;RN;PB;PE;AL;SE;BA;MG;ES;RJ;SP;PR;SC;RS;MS;MT;GO;DF" Title="UF">
                   <ui:InputDialog.Result>
                     <OutArgument x:TypeArguments="x:String">[UF]</OutArgument>
                   </ui:InputDialog.Result>
                 </ui:InputDialog>
-                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[CNPJError]" DisplayName="Verifica CNPJ" sap:VirtualizedContainerService.HintSize="866.4,2021.6" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_5">
+                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[CNPJError]" DisplayName="Verifica CNPJ" sap:VirtualizedContainerService.HintSize="640.8,2021.6" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_5">
                   <ui:InterruptibleDoWhile.Body>
                     <Sequence DisplayName="Sequencia CNPJ" sap:VirtualizedContainerService.HintSize="605.6,1844.8" sap2010:WorkflowViewState.IdRef="Sequence_36">
                       <sap:WorkflowViewStateService.ViewState>
@@ -581,9 +582,9 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:InterruptibleDoWhile>
-                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[DirError]" DisplayName="Verifica diretorio" sap:VirtualizedContainerService.HintSize="866.4,2476" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_6">
+                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[DirError]" DisplayName="Verifica diretorio" sap:VirtualizedContainerService.HintSize="640.8,62.4" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_6">
                   <ui:InterruptibleDoWhile.Body>
-                    <Sequence DisplayName="Corpo Diretorio" sap:VirtualizedContainerService.HintSize="831.2,2299.2" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                    <Sequence DisplayName="Corpo Diretorio" sap:VirtualizedContainerService.HintSize="605.6,2299.2" sap2010:WorkflowViewState.IdRef="Sequence_38">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:Boolean" Name="ExisteDir" />
                       </Sequence.Variables>
@@ -592,12 +593,12 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Captura Diretorio" sap:VirtualizedContainerService.HintSize="768.8,251.2" sap2010:WorkflowViewState.IdRef="InputDialog_6" IsPassword="False" Label="[&quot;Insira aqui o diretorio da paasta com os arquivos&quot; + ErroLabel]" Title="Diretorio">
+                      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Captura Diretorio" sap:VirtualizedContainerService.HintSize="543.2,251.2" sap2010:WorkflowViewState.IdRef="InputDialog_6" IsPassword="False" Label="[&quot;Insira aqui o diretorio da paasta com os arquivos&quot; + ErroLabel]" Title="Diretorio">
                         <ui:InputDialog.Result>
                           <OutArgument x:TypeArguments="x:String">[Dir]</OutArgument>
                         </ui:InputDialog.Result>
                       </ui:InputDialog>
-                      <ui:MultipleAssign DisplayName="Padroniza dados" sap:VirtualizedContainerService.HintSize="768.8,111.2" sap2010:WorkflowViewState.IdRef="MultipleAssign_24">
+                      <ui:MultipleAssign DisplayName="Padroniza dados" sap:VirtualizedContainerService.HintSize="543.2,111.2" sap2010:WorkflowViewState.IdRef="MultipleAssign_24">
                         <ui:MultipleAssign.AssignOperations>
                           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_48">
@@ -613,8 +614,8 @@
                           </scg:List>
                         </ui:MultipleAssign.AssignOperations>
                       </ui:MultipleAssign>
-                      <ui:FolderExistsX DisplayName="Folder Exists" Exists="[ExisteDir]" sap:VirtualizedContainerService.HintSize="768.8,144" sap2010:WorkflowViewState.IdRef="FolderExistsX_1" Path="[Dir]" />
-                      <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="768.8,1549.6" sap2010:WorkflowViewState.IdRef="IfElseIf_6">
+                      <ui:FolderExistsX DisplayName="Folder Exists" Exists="[ExisteDir]" sap:VirtualizedContainerService.HintSize="543.2,144" sap2010:WorkflowViewState.IdRef="FolderExistsX_1" Path="[Dir]" />
+                      <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="543.2,1549.6" sap2010:WorkflowViewState.IdRef="IfElseIf_6">
                         <ui:IfElseIf.ConditionBlocks>
                           <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                             <ui:IfElseIfBlock BlockType="If" Condition="[String.IsNullOrEmpty(Dir)]">
@@ -756,8 +757,27 @@
                       </ui:IfElseIf>
                     </Sequence>
                   </ui:InterruptibleDoWhile.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
                 </ui:InterruptibleDoWhile>
-                <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="866.4,304.8" sap2010:WorkflowViewState.IdRef="InputDialog_8" IsPassword="False" Label="[&quot;Confirmar os seguintes dados como parametro:&quot;+vbCrLf+&quot;CFOPs: &quot;+CFOPs+vbCrLf+&quot;NCMs: &quot;+NCMs+vbCrLf+&quot;CNPJ: &quot;+CNPJ+vbCrLf+&quot;UF: &quot;+UF+vbCrLf+&quot;Driretorio: &quot;+Dir]" OptionsString="Sim;Não" Title="Confirmação">
+                <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="" sap:VirtualizedContainerService.HintSize="640.8,251.2" sap2010:WorkflowViewState.IdRef="InputDialog_9" IsPassword="False" Label="Insira aqui o nome do produto caso deseje verificar por ele" Title="Produto">
+                  <ui:InputDialog.Result>
+                    <OutArgument x:TypeArguments="x:String">[Produto]</OutArgument>
+                  </ui:InputDialog.Result>
+                </ui:InputDialog>
+                <Assign sap:VirtualizedContainerService.HintSize="640.8,69.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[Produto]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[Produto.ToUpper]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="640.8,304.8" sap2010:WorkflowViewState.IdRef="InputDialog_8" IsPassword="False" Label="[&quot;Confirmar os seguintes dados como parametro:&quot;+vbCrLf+&quot;CFOPs: &quot;+CFOPs+vbCrLf+&quot;NCMs: &quot;+NCMs+vbCrLf+&quot;CNPJ: &quot;+CNPJ+vbCrLf+&quot;UF: &quot;+UF+vbCrLf+&quot;Driretorio: &quot;+Dir + vbCrLf + &quot;Produto: &quot; +  Produto]" OptionsString="Sim;Não" Title="Confirmação">
                   <ui:InputDialog.Result>
                     <OutArgument x:TypeArguments="x:String">[ConfirmaRequerimentoLabel]</OutArgument>
                   </ui:InputDialog.Result>
@@ -768,7 +788,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1029.6,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="804,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>

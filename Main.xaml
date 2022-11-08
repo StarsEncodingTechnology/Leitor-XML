@@ -84,6 +84,7 @@
             <Variable x:TypeArguments="x:String" Name="CFOPs" />
             <Variable x:TypeArguments="x:String" Name="UF" />
             <Variable x:TypeArguments="x:String" Name="Dir" />
+            <Variable x:TypeArguments="x:String" Name="Produto" />
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -92,11 +93,24 @@
           </sap:WorkflowViewStateService.ViewState>
           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Puxar parametros" sap:VirtualizedContainerService.HintSize="344.8,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Processos\Requerimento de parametros.xaml">
             <ui:InvokeWorkflowFile.Arguments>
-              <OutArgument x:TypeArguments="x:String" x:Key="NCMs">[NCMs]</OutArgument>
-              <OutArgument x:TypeArguments="x:String" x:Key="CNPJ">[CNPJ]</OutArgument>
-              <OutArgument x:TypeArguments="x:String" x:Key="CFOPs">[CFOPs]</OutArgument>
-              <OutArgument x:TypeArguments="x:String" x:Key="UF">[UF]</OutArgument>
-              <OutArgument x:TypeArguments="x:String" x:Key="Dir">[Dir]</OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="NCMs">
+                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="NCMs" />
+              </OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="CNPJ">
+                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="CNPJ" />
+              </OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="CFOPs">
+                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="CFOPs" />
+              </OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="UF">
+                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="UF" />
+              </OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="Dir">
+                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="Dir" />
+              </OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="Produto">
+                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="Produto" />
+              </OutArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Processos\Captura de Notas.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="344.8,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Processos\Captura de Notas.xaml">
@@ -115,6 +129,9 @@
               </InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="UF">
                 <VisualBasicValue x:TypeArguments="x:String" ExpressionText="UF" />
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="Produto">
+                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Produto" />
               </InArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
