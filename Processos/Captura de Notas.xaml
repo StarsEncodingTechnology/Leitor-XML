@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Captura_de_Notas" this:Captura_de_Notas.Dir="C:\Users\Stars\Desktop\TRANSMOB" this:Captura_de_Notas.NCMs="25030010" this:Captura_de_Notas.CNPJ="50505924000118" this:Captura_de_Notas.CFOPs="1206;2206" this:Captura_de_Notas.UF="SP" this:Captura_de_Notas.Produto="ENXOFRE" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Captura_de_Notas" this:Captura_de_Notas.Dir="C:\Users\Stars\Desktop\Transmob" this:Captura_de_Notas.NCMs="25030010" this:Captura_de_Notas.CNPJ="50505924000118" this:Captura_de_Notas.CFOPs="1206;2206" this:Captura_de_Notas.UF="SP" this:Captura_de_Notas.Produto="ENXOFRE" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="Dir" Type="InArgument(x:String)" />
     <x:Property Name="NCMs" Type="InArgument(x:String)" />
@@ -10,7 +10,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>847.1999999999999,11434.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>999.2,15103.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Captura_de_Notas_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="38">
@@ -114,7 +114,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Captura_de_Notas" sap:VirtualizedContainerService.HintSize="834.4,11369.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Captura_de_Notas" sap:VirtualizedContainerService.HintSize="1009.6,15038.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Arquivos" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Arquivos_Filtrados" />
@@ -125,24 +125,24 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BuildDataTable DataTable="[dt_Arquivos]" DisplayName="Constroi tabela de arquivos" sap:VirtualizedContainerService.HintSize="772,69.6" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Arquivo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Diretorio&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Dados_x0020_XML&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:BuildDataTable DataTable="[dt_Arquivos_Filtrados]" DisplayName="Cosntroi tabela de resultados" sap:VirtualizedContainerService.HintSize="772,69.6" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Arquivo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Diretorio&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;NCM&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;CNPJ&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;CFOP&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;UF&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:BuildDataTable DataTable="[dt_log]" DisplayName="Cosntroi log" sap:VirtualizedContainerService.HintSize="772,69.6" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Data_x0020_CT-e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Chave_x0020_CT-e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Detecta todos os arquivos a serem lidos" sap:VirtualizedContainerService.HintSize="772,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Processos\Le Interno.xaml">
+    <ui:BuildDataTable DataTable="[dt_Arquivos]" DisplayName="Constroi tabela de arquivos" sap:VirtualizedContainerService.HintSize="947.2,69.6" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Arquivo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Diretorio&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Dados_x0020_XML&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:BuildDataTable DataTable="[dt_Arquivos_Filtrados]" DisplayName="Cosntroi tabela de resultados" sap:VirtualizedContainerService.HintSize="947.2,69.6" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Arquivo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Diretorio&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;NCM&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;CNPJ&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;CFOP&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;UF&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:BuildDataTable DataTable="[dt_log]" DisplayName="Cosntroi log" sap:VirtualizedContainerService.HintSize="947.2,69.6" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Data_x0020_CT-e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Chave_x0020_CT-e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Detecta todos os arquivos a serem lidos" sap:VirtualizedContainerService.HintSize="947.2,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Processos\Le Interno.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="Dir">[Dir]</InArgument>
         <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dt_Arquivos">[dt_Arquivos]</InOutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Padrão" sap:VirtualizedContainerService.HintSize="772,90.4" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[Dir+&quot;\Padrão\&quot;]" />
-    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Padrão" sap:VirtualizedContainerService.HintSize="772,90.4" sap2010:WorkflowViewState.IdRef="CreateDirectory_4" Path="[Dir+&quot;\GeralExcluidos\&quot;]" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Arquivos]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="772,9812.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Padrão" sap:VirtualizedContainerService.HintSize="947.2,90.4" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[Dir+&quot;\Padrão\&quot;]" />
+    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Padrão" sap:VirtualizedContainerService.HintSize="947.2,90.4" sap2010:WorkflowViewState.IdRef="CreateDirectory_4" Path="[Dir+&quot;\GeralExcluidos\&quot;]" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Arquivos]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="947.2,13481.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="913.6,13481.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="913.6,13356" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="Diretorio_Arquivo" />
               <Variable x:TypeArguments="x:String" Name="String_XML" />
@@ -1247,7 +1247,7 @@
                         <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="687.2,626.4" sap2010:WorkflowViewState.IdRef="IfElseIf_20">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                              <ui:IfElseIfBlock BlockType="If" Condition="[carga.Contains(&quot;Produto&quot;)]">
+                              <ui:IfElseIfBlock BlockType="If" Condition="[carga.Contains(Produto)]">
                                 <ui:IfElseIfBlock.Then>
                                   <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="400,192.8" sap2010:WorkflowViewState.IdRef="Sequence_48">
                                     <sap:WorkflowViewStateService.ViewState>
@@ -1320,7 +1320,7 @@
               </sap:WorkflowViewStateService.ViewState>
             </ui:IfElseIf>
             <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentRow(0).ToString, CurrentRow(1).ToString, ValidadorNCM.ToString, ValidadorCNPJ.ToString, ValidadorCFOP.ToString, ValidadorUF.ToString}]" DataTable="[dt_Arquivos_Filtrados]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="851.2,197.6" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-            <ui:IfElseIf DisplayName=" Else If" sap:VirtualizedContainerService.HintSize="851.2,6129.6" sap2010:WorkflowViewState.IdRef="IfElseIf_12">
+            <ui:IfElseIf DisplayName=" Else If" sap:VirtualizedContainerService.HintSize="851.2,6004" sap2010:WorkflowViewState.IdRef="IfElseIf_12">
               <ui:IfElseIf.ConditionBlocks>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                   <ui:IfElseIfBlock BlockType="If" Condition="[not (ValidadorCFOP or (not ValidadorCNPJ) or ValidadorNCM or (not ValidadorUF) or ValidadorProduto)]">
@@ -1337,7 +1337,7 @@
                   </ui:IfElseIfBlock>
                   <ui:IfElseIfBlock BlockType="Else">
                     <ui:IfElseIfBlock.Then>
-                      <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="605.6,5596" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                      <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="512.8,5470.4" sap2010:WorkflowViewState.IdRef="Sequence_42">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:String" Name="MoveDir" />
                           <Variable x:TypeArguments="x:Boolean" Name="existe" />
@@ -1356,7 +1356,7 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="543.2,266.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_12">
+                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="450.4,266.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_12">
                           <ui:MultipleAssign.AssignOperations>
                             <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                               <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_54">
@@ -1410,8 +1410,7 @@
                             </scg:List>
                           </ui:MultipleAssign.AssignOperations>
                         </ui:MultipleAssign>
-                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="543.2,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;&quot;&quot;&quot;]" />
-                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="543.2,141.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_13">
+                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="450.4,141.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_13">
                           <ui:MultipleAssign.AssignOperations>
                             <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                               <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_60">
@@ -1433,7 +1432,7 @@
                             </scg:List>
                           </ui:MultipleAssign.AssignOperations>
                         </ui:MultipleAssign>
-                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="543.2,944" sap2010:WorkflowViewState.IdRef="IfElseIf_22">
+                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="450.4,944" sap2010:WorkflowViewState.IdRef="IfElseIf_22">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                               <ui:IfElseIfBlock BlockType="If" Condition="[String_XML.Contains(&quot;nfeProc&quot;)]">
@@ -1506,7 +1505,7 @@
                             </sc:BindingList>
                           </ui:IfElseIf.ConditionBlocks>
                         </ui:IfElseIf>
-                        <Assign sap:VirtualizedContainerService.HintSize="543.2,69.6" sap2010:WorkflowViewState.IdRef="Assign_36">
+                        <Assign sap:VirtualizedContainerService.HintSize="450.4,69.6" sap2010:WorkflowViewState.IdRef="Assign_36">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[idNota]</OutArgument>
                           </Assign.To>
@@ -1514,7 +1513,7 @@
                             <InArgument x:TypeArguments="x:String">[idNota.Replace(TipoNota, "")]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="543.2,173.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_18">
+                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="450.4,173.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_18">
                           <ui:MultipleAssign.AssignOperations>
                             <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                               <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_74">
@@ -1544,9 +1543,9 @@
                             </scg:List>
                           </ui:MultipleAssign.AssignOperations>
                         </ui:MultipleAssign>
-                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{DataEmi, idNota}]" DataTable="[dt_log]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="543.2,197.6" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
-                        <ui:CopyFile ContinueOnError="{x:Null}" Destination="[Dir+&quot;\GeralExcluidos\&quot;]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="543.2,164.8" sap2010:WorkflowViewState.IdRef="CopyFile_1" Path="[CurrentRow(1).ToString]" />
-                        <Assign sap:VirtualizedContainerService.HintSize="543.2,69.6" sap2010:WorkflowViewState.IdRef="Assign_22">
+                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{DataEmi, idNota}]" DataTable="[dt_log]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="450.4,197.6" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                        <ui:CopyFile ContinueOnError="{x:Null}" Destination="[Dir+&quot;\GeralExcluidos\&quot;]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="450.4,164.8" sap2010:WorkflowViewState.IdRef="CopyFile_1" Path="[CurrentRow(1).ToString]" />
+                        <Assign sap:VirtualizedContainerService.HintSize="450.4,69.6" sap2010:WorkflowViewState.IdRef="Assign_22">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[MoveDir]</OutArgument>
                           </Assign.To>
@@ -1554,7 +1553,7 @@
                             <InArgument x:TypeArguments="x:String">[Dir + "\Separado por"]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="543.2,397.6" sap2010:WorkflowViewState.IdRef="IfElseIf_13">
+                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="450.4,397.6" sap2010:WorkflowViewState.IdRef="IfElseIf_13">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                               <ui:IfElseIfBlock BlockType="If" Condition="[ValidadorNCM]">
@@ -1579,7 +1578,7 @@
                             </sc:BindingList>
                           </ui:IfElseIf.ConditionBlocks>
                         </ui:IfElseIf>
-                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="543.2,397.6" sap2010:WorkflowViewState.IdRef="IfElseIf_14">
+                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="450.4,397.6" sap2010:WorkflowViewState.IdRef="IfElseIf_14">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                               <ui:IfElseIfBlock BlockType="If" Condition="[not ValidadorCNPJ]">
@@ -1604,7 +1603,7 @@
                             </sc:BindingList>
                           </ui:IfElseIf.ConditionBlocks>
                         </ui:IfElseIf>
-                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="543.2,397.6" sap2010:WorkflowViewState.IdRef="IfElseIf_15">
+                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="450.4,397.6" sap2010:WorkflowViewState.IdRef="IfElseIf_15">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                               <ui:IfElseIfBlock BlockType="If" Condition="[ValidadorCFOP]">
@@ -1629,7 +1628,7 @@
                             </sc:BindingList>
                           </ui:IfElseIf.ConditionBlocks>
                         </ui:IfElseIf>
-                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="543.2,397.6" sap2010:WorkflowViewState.IdRef="IfElseIf_16">
+                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="450.4,397.6" sap2010:WorkflowViewState.IdRef="IfElseIf_16">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                               <ui:IfElseIfBlock BlockType="If" Condition="[not ValidadorUF]">
@@ -1654,7 +1653,7 @@
                             </sc:BindingList>
                           </ui:IfElseIf.ConditionBlocks>
                         </ui:IfElseIf>
-                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="543.2,397.6" sap2010:WorkflowViewState.IdRef="IfElseIf_21">
+                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="450.4,397.6" sap2010:WorkflowViewState.IdRef="IfElseIf_21">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                               <ui:IfElseIfBlock BlockType="If" Condition="[ValidadorProduto]">
@@ -1679,8 +1678,8 @@
                             </sc:BindingList>
                           </ui:IfElseIf.ConditionBlocks>
                         </ui:IfElseIf>
-                        <ui:FolderExistsX DisplayName="Folder Exists" Exists="[existe]" sap:VirtualizedContainerService.HintSize="543.2,144" sap2010:WorkflowViewState.IdRef="FolderExistsX_1" Path="[MoveDir+&quot;\&quot;]" />
-                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="543.2,418.4" sap2010:WorkflowViewState.IdRef="IfElseIf_17">
+                        <ui:FolderExistsX DisplayName="Folder Exists" Exists="[existe]" sap:VirtualizedContainerService.HintSize="450.4,144" sap2010:WorkflowViewState.IdRef="FolderExistsX_1" Path="[MoveDir+&quot;\&quot;]" />
+                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="450.4,418.4" sap2010:WorkflowViewState.IdRef="IfElseIf_17">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                               <ui:IfElseIfBlock BlockType="If" Condition="[not existe]">
@@ -1698,7 +1697,7 @@
                             </sc:BindingList>
                           </ui:IfElseIf.ConditionBlocks>
                         </ui:IfElseIf>
-                        <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[MoveDir+&quot;\&quot;]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="543.2,169.6" sap2010:WorkflowViewState.IdRef="MoveFile_2" Overwrite="True" Path="[CurrentRow(1).ToString]" />
+                        <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[MoveDir+&quot;\&quot;]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="450.4,169.6" sap2010:WorkflowViewState.IdRef="MoveFile_2" Overwrite="True" Path="[CurrentRow(1).ToString]" />
                       </Sequence>
                     </ui:IfElseIfBlock.Then>
                   </ui:IfElseIfBlock>
@@ -1709,9 +1708,9 @@
         </ActivityAction>
       </ui:ForEachRow.Body>
     </ui:ForEachRow>
-    <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[Dir+&quot;\Padronização.txt&quot;]" sap:VirtualizedContainerService.HintSize="772,144" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[&quot;Os arquivos foram separados dado as seguintes parametrizações: &quot; + vbcrlf + &quot;Contem NCM's: &quot;+NCMs+vbCrLf+&quot;Não é emitido pelo CNPJ: &quot;+CNPJ+vbCrLf+&quot;Possui CFOP's: &quot;+CFOPs+vbCrLf+&quot;Não foi emitida no estado: &quot;+UF]" />
-    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_Arquivos]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="772,125.6" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="Teste.xlsx" />
-    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_Arquivos_Filtrados]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="772,125.6" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1" WorkbookPath="Teste2.xlsx" />
-    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_log]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="772,125.6" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Sheet1" WorkbookPath="[Dir+&quot;\Resultados.xlsx&quot;]" />
+    <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[Dir+&quot;\Padronização.txt&quot;]" sap:VirtualizedContainerService.HintSize="947.2,144" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[&quot;Os arquivos foram separados dado as seguintes parametrizações: &quot; + vbcrlf + &quot;Contem NCM's: &quot;+NCMs+vbCrLf+&quot;Não é emitido pelo CNPJ: &quot;+CNPJ+vbCrLf+&quot;Possui CFOP's: &quot;+CFOPs+vbCrLf+&quot;Não foi emitida no estado: &quot;+UF + vbCrLf+&quot;Produto: &quot;+Produto]" />
+    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_Arquivos]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="947.2,125.6" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="Teste.xlsx" />
+    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_Arquivos_Filtrados]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="947.2,125.6" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1" WorkbookPath="Teste2.xlsx" />
+    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_log]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="947.2,125.6" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Sheet1" WorkbookPath="[Dir+&quot;\Resultados.xlsx&quot;]" />
   </Sequence>
 </Activity>
