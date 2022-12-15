@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Captura_de_Notas" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Captura_de_Notas" this:Captura_de_Notas.Dir="D:\Contabilizai\New\Rodotac" this:Captura_de_Notas.NCMs="25030010" this:Captura_de_Notas.CNPJ="04400329000109" this:Captura_de_Notas.CFOPs="1206;2206" this:Captura_de_Notas.UF="SP" this:Captura_de_Notas.Produto="ENXOFRE" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="Dir" Type="InArgument(x:String)" />
     <x:Property Name="NCMs" Type="InArgument(x:String)" />
@@ -148,7 +148,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="913.6,13159.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="862.4,13159.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="Diretorio_Arquivo" />
               <Variable x:TypeArguments="x:String" Name="String_XML" />
@@ -163,7 +163,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:MultipleAssign DisplayName="Obtem valores iniciais" sap:VirtualizedContainerService.HintSize="851.2,141.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+            <ui:MultipleAssign DisplayName="Obtem valores iniciais" sap:VirtualizedContainerService.HintSize="800,141.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
@@ -185,7 +185,7 @@
                 </scg:List>
               </ui:MultipleAssign.AssignOperations>
             </ui:MultipleAssign>
-            <ui:IfElseIf DisplayName="Verifica NCMs" sap:VirtualizedContainerService.HintSize="851.2,62.4" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+            <ui:IfElseIf DisplayName="Verifica NCMs" sap:VirtualizedContainerService.HintSize="800,62.4" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
               <ui:IfElseIf.ConditionBlocks>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                   <ui:IfElseIfBlock BlockType="If" Condition="[not String.IsNullOrEmpty(NCMs)]">
@@ -328,12 +328,12 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:IfElseIf>
-            <ui:IfElseIf DisplayName="Verifica CNPJ" sap:VirtualizedContainerService.HintSize="851.2,62.4" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
+            <ui:IfElseIf DisplayName="Verifica CNPJ" sap:VirtualizedContainerService.HintSize="800,62.4" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
               <ui:IfElseIf.ConditionBlocks>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                   <ui:IfElseIfBlock BlockType="If" Condition="[not String.IsNullOrEmpty(CNPJ)]">
                     <ui:IfElseIfBlock.Then>
-                      <Sequence sap:VirtualizedContainerService.HintSize="544,950.4" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                      <Sequence sap:VirtualizedContainerService.HintSize="544,982.4" sap2010:WorkflowViewState.IdRef="Sequence_16">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:Int32" Name="Index_Inicial_CNPJ" />
                           <Variable x:TypeArguments="x:Int32" Name="Index_Final_CNPJ" />
@@ -460,7 +460,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:IfElseIf>
-            <ui:IfElseIf DisplayName="Verifica UF" sap:VirtualizedContainerService.HintSize="851.2,2692" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
+            <ui:IfElseIf DisplayName="Verifica UF" sap:VirtualizedContainerService.HintSize="800,2692" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
               <ui:IfElseIf.ConditionBlocks>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                   <ui:IfElseIfBlock BlockType="If" Condition="[String.IsNullOrEmpty(UF) or  UF = &quot;Nenhum&quot;]">
@@ -687,12 +687,12 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:IfElseIf>
-            <ui:IfElseIf DisplayName="Verifica CFOP" sap:VirtualizedContainerService.HintSize="851.2,62.4" sap2010:WorkflowViewState.IdRef="IfElseIf_8">
+            <ui:IfElseIf DisplayName="Verifica CFOP" sap:VirtualizedContainerService.HintSize="800,62.4" sap2010:WorkflowViewState.IdRef="IfElseIf_8">
               <ui:IfElseIf.ConditionBlocks>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                   <ui:IfElseIfBlock BlockType="If" Condition="[not String.IsNullOrEmpty(CFOPs)]">
                     <ui:IfElseIfBlock.Then>
-                      <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="625.6,2564.8" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                      <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="625.6,2596.8" sap2010:WorkflowViewState.IdRef="Sequence_28">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:Int32" Name="index_Inicial_CFOP" />
                           <Variable x:TypeArguments="x:Int32" Name="index_Final_CFOP" />
@@ -849,7 +849,7 @@
                             </sc:BindingList>
                           </ui:IfElseIf.ConditionBlocks>
                         </ui:IfElseIf>
-                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="563.2,1292.8" sap2010:WorkflowViewState.IdRef="IfElseIf_11">
+                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="563.2,1356.8" sap2010:WorkflowViewState.IdRef="IfElseIf_11">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                               <ui:IfElseIfBlock BlockType="If" Condition="[not String.IsNullOrEmpty(CFOP_XML)]">
@@ -971,7 +971,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:IfElseIf>
-            <ui:IfElseIf DisplayName="Verifica Produto" sap:VirtualizedContainerService.HintSize="851.2,3533.6" sap2010:WorkflowViewState.IdRef="IfElseIf_19">
+            <ui:IfElseIf DisplayName="Verifica Produto" sap:VirtualizedContainerService.HintSize="800,3533.6" sap2010:WorkflowViewState.IdRef="IfElseIf_19">
               <ui:IfElseIf.ConditionBlocks>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                   <ui:IfElseIfBlock BlockType="If" Condition="[not String.IsNullOrEmpty(Produto)]">
@@ -1279,8 +1279,8 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:IfElseIf>
-            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentRow(0).ToString, CurrentRow(1).ToString, ValidadorNCM.ToString, ValidadorCNPJ.ToString, ValidadorCFOP.ToString, ValidadorUF.ToString}]" DataTable="[dt_Arquivos_Filtrados]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="851.2,197.6" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-            <ui:IfElseIf DisplayName=" Else If" sap:VirtualizedContainerService.HintSize="851.2,6004" sap2010:WorkflowViewState.IdRef="IfElseIf_12">
+            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentRow(0).ToString, CurrentRow(1).ToString, ValidadorNCM.ToString, ValidadorCNPJ.ToString, ValidadorCFOP.ToString, ValidadorUF.ToString}]" DataTable="[dt_Arquivos_Filtrados]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="800,197.6" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+            <ui:IfElseIf DisplayName=" Else If" sap:VirtualizedContainerService.HintSize="800,6004" sap2010:WorkflowViewState.IdRef="IfElseIf_12">
               <ui:IfElseIf.ConditionBlocks>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                   <ui:IfElseIfBlock BlockType="If" Condition="[not (ValidadorCFOP or (not ValidadorCNPJ) or ValidadorNCM or (not ValidadorUF) or ValidadorProduto)]">
